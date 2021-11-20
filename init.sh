@@ -4,4 +4,4 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
     subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo \
     libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler \
     g++-multilib antlr3 gperf wget curl swig rsync \
-    tmux aria2c tig htop
+    tmux aria2 tig htop
