@@ -5,3 +5,5 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
     libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler \
     g++-multilib antlr3 gperf wget curl swig rsync \
     tmux aria2 tig htop
+
+curl -fsSL https://get.docker.com | sudo bash -s docker --mirror Aliyun
