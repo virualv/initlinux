@@ -6,4 +6,4 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
     g++-multilib antlr3 gperf wget curl swig rsync \
     tmux aria2 tig htop
 
-curl -fsSL https://get.docker.com | sudo bash -s docker --mirror Aliyun
+curl -fsSL https://get.docker.com | sudo bash -s docker
