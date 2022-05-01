@@ -9,4 +9,4 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 curl -fsSL https://get.docker.com | sudo bash -s docker
 
-sudo su -c "https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-`uname -m` -o /usr/local/bin/docker-compose && chmod a+x /usr/local/bin/docker-compose"
+sudo su -c "curl -k -sSL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-`uname -m` -o /usr/local/bin/docker-compose && chmod a+x /usr/local/bin/docker-compose"
