@@ -8,3 +8,5 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
     tmux aria2 tig htop
 
 curl -fsSL https://get.docker.com | sudo bash -s docker --mirror Aliyun
+
+sudo su -c "curl -L https://get.daocloud.io/docker/compose/releases/download/2.5.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose && chmod a+x /usr/local/bin/docker-compose"
