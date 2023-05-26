@@ -11,6 +11,12 @@ curl -fsSL https://raw.githubusercontent.com/virualv/initlinux/oversea/init.sh |
 curl -fsSL https://raw.githubusercontent.com/virualv/initlinux/arm/init.sh | bash
 ```
 
+- generic (mini)
+
+```shell
+curl -fsSL https://raw.githubusercontent.com/virualv/initlinux/oversea/init-mini.sh | bash
+```
+
 China Mainland
 
 - x86
