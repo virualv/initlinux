@@ -15,10 +15,10 @@ fi
 
 if [ ${IS_OVERSEA} == 'true' ]; then
     curl -fsSL https://get.docker.com | sudo bash -s docker
-    sudo su -c "curl -k -sSL https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-`uname -m` -o /usr/local/bin/docker-compose && chmod a+x /usr/local/bin/docker-compose"
+    sudo su -c "curl -k -sSL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-`uname -m` -o /usr/local/bin/docker-compose && chmod a+x /usr/local/bin/docker-compose"
 else
     curl -fsSL https://get.docker.com | sudo bash -s docker --mirror Aliyun
-    sudo su -c "curl -k -sSL https://ghproxy.com/https://github.com/docker/compose/releases/download/v2.5.0/docker-compose-linux-`uname -m` -o /usr/local/bin/docker-compose && chmod a+x /usr/local/bin/docker-compose"
+    sudo su -c "curl -k -sSL https://ghproxy.com/https://github.com/docker/compose/releases/latest/download/docker-compose-linux-`uname -m` -o /usr/local/bin/docker-compose && chmod a+x /usr/local/bin/docker-compose"
 fi
 
 if [ ${ARCH} == 'x86_64' ]; then
@@ -78,7 +78,7 @@ echo -e "net.ipv4.neigh.default.base_reachable_time_ms = 600000
 net.ipv4.neigh.default.mcast_solicit = 20
 net.ipv4.neigh.default.retrans_time_ms = 250
 net.ipv4.conf.all.rp_filter=0
-net.ipv4.conf.{IFNAME}.rp_filter=0
+net.ipv4.conf.${IFNAME}.rp_filter=0
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 net.ipv4.tcp_fastopen=3
